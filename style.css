@@ -6,18 +6,20 @@ body {
   font-style: normal;
   font-weight: 800;
   text-transform: uppercase;
+  align-items: center;
+
 }
 
 .game-board {
-  background-color: #FFFF8D;
+  background-color: ;
   border: 1px solid #FFF59D;
   border-radius:10px;
-  width: 700px;
+  width: 640px;
   height: 580px;
   margin: 0 auto;
   padding:;
-  display:flex;
-  flex-direction: column;
+
+
 
 }
 
@@ -26,4 +28,33 @@ h1 {
   font-size: 4em;
 }
 
+h2 {
+  text-align: center;
+}
 
+button.newGame {
+  font-family: "Proxima Nova";
+  background-color: #FFFF8D;
+  border-radius: 5px;
+  margin:20px;
+  padding:10px;
+  align-self: center;
+}
+
+
+.gamePiece{
+  z-index:-1;
+  top:-55px;
+  left:14px;
+  width:46px;
+  height:46px;
+  border-radius:46px;
+}
+
+.gamePiece.blue{
+  background:#BBDEFB;
+}
+
+.gamePiece.purple{
+  background:#E1BEE7;
+}
