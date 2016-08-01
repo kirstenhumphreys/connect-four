@@ -7,27 +7,24 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   align-items: center;
-
-}
-
-.game-board {
-  background-color:#FFFF8D;
-  border: 1px solid #FFF59D;
-  border-radius:10px;
-  width: 640px;
-  height: 580px;
-  margin: 0 auto;
-  padding:;
 }
 
 h1 {
   text-align: center;
-  font-size: 4em;
+  font-size: 42px;
 }
 
 h2 {
   text-align: center;
+  font-size: 1em;
 }
+
+/*.circle1 {
+  width: 10%;
+  height: 10%;
+  background:black;
+  border-radius: 50px;
+}*/
 
 button.newGame {
   font-family: "Proxima Nova";
@@ -35,67 +32,60 @@ button.newGame {
   border-radius: 5px;
   margin:20px;
   padding:10px;
-  align-self: center;
 }
 
-
-.gamePiece{
-  z-index:-1;
-  top:-55px;
-  left:12px;
-  width:46px;
-  height:46px;
-  border-radius:46px;
+button.newGame:hover {
+  background-color:#A7FFEB;
 }
 
-.gamePiece.blue{
-  background:#BBDEFB;
-}
-
-.gamePiece.purple{
-  background:#E1BEE7;
+.new-game {
+display: flex;
+justify-content: center;
 }
 
 .grid-container{
         width: 100%;
-        max-width: 640px;
+        max-width: 700px;
         margin: 0 auto;
         display:flex;
         flex-direction: column;
-        flex-wrap: nowrap
+        flex-wrap: nowrap;
         justify-content: space-between;
     }
 
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7 {
 
-[class*='col-'] {
-        float: left;
-        min-height: 1px;
-        width: 14%;
-        /*-- our gutter -- */
+        height: 400px;
+        width: 12%;
         padding: 5px;
         background-color: #FFFF8D;
     }
 
-    .col-1{ width: 12%;
-            height: 400px;
-            }
-    .col-2{ width: 12%;
-            height: 400px; }
-    .col-3{ width: 12%;
-            height: 400px; }
-    .col-4{ width: 12%;
-            height: 400px;}
-    .col-5{ width: 12%;
-            height: 400px; }
-    .col-6{ width: 12%;
-            height: 400px;}
-    .col-7{ width: 12%;
-            height: 400px;}
+.row {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 
     .outline, .outline *{
-        border: 2px solid #A7FFEB;
+        border: 1px solid #A7FFEB;
         border-radius: 10px;
     }
 
-    /*-- some extra column content styling --*/
+.cell {
+  background-color:#A7FFEB;
+  height: 98%;
+  width: 95%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 
