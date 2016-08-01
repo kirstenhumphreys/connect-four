@@ -11,16 +11,13 @@ body {
 }
 
 .game-board {
-  background-color: ;
+  background-color:#FFFF8D;
   border: 1px solid #FFF59D;
   border-radius:10px;
   width: 640px;
   height: 580px;
   margin: 0 auto;
   padding:;
-
-
-
 }
 
 h1 {
@@ -45,7 +42,7 @@ button.newGame {
 .gamePiece{
   z-index:-1;
   top:-55px;
-  left:14px;
+  left:12px;
   width:46px;
   height:46px;
   border-radius:46px;
@@ -58,3 +55,47 @@ button.newGame {
 .gamePiece.purple{
   background:#E1BEE7;
 }
+
+.grid-container{
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap
+        justify-content: space-between;
+    }
+
+
+[class*='col-'] {
+        float: left;
+        min-height: 1px;
+        width: 14%;
+        /*-- our gutter -- */
+        padding: 5px;
+        background-color: #FFFF8D;
+    }
+
+    .col-1{ width: 12%;
+            height: 400px;
+            }
+    .col-2{ width: 12%;
+            height: 400px; }
+    .col-3{ width: 12%;
+            height: 400px; }
+    .col-4{ width: 12%;
+            height: 400px;}
+    .col-5{ width: 12%;
+            height: 400px; }
+    .col-6{ width: 12%;
+            height: 400px;}
+    .col-7{ width: 12%;
+            height: 400px;}
+
+    .outline, .outline *{
+        border: 2px solid #A7FFEB;
+        border-radius: 10px;
+    }
+
+    /*-- some extra column content styling --*/
+
