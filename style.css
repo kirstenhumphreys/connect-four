@@ -1,88 +1,143 @@
-
-
 body {
-  background-color: #A7FFEB;
-  font-family: "Proxima Nova", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  text-transform: uppercase;
-  align-items: center;
+    background-color: #607D8B;
+    font-family: "Proxima Nova", sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
-  text-align: center;
-  font-size: 42px;
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 18px;
 }
 
 h2 {
-  text-align: center;
-  font-size: 1em;
-}
-
-.circle1 {
-  width: 10%;
-  height: 10%;
-  background:black;
-  border-radius: 50px;
+    text-align: center;
+    font-size: 1em;
 }
 
 button.newGame {
-  font-family: "Proxima Nova";
-  background-color: #FFFF8D;
-  border-radius: 5px;
-  margin:20px;
-  padding:10px;
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: #CFD8DC;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    text-transform: uppercase;
 }
 
 button.newGame:hover {
-  background-color:#A7FFEB;
+    background-color: #C6FF00;
+}
+
+button:focus {
+  outline:0;
 }
 
 .new-game {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
-#game-board{
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
-  display:flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
+#game-board {
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: #CFD8DC;
+    border-top: 2px solid #ECEFF1;
+    border-left: 2px solid #ECEFF1;
+    border-radius: 20px;
+    box-shadow: 4px 4px 2px 0 #455A64;
 }
 
-#game-base{
-  width:640px;
-  margin:0 auto;
-  padding-top:60px;
+#game-table {
+    margin: 0 auto;
+    padding-top: 10px;
 }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7 {
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7 {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    background-color: #607D8B;
+    border: 1px solid #B0BEC5;
+    border-radius: 100%;
+    margin: 3px;
 
-  height: 400px;
-  width: 12%;
-  padding: 5px;
-  background-color: #FFFF8D;
-  border: 1px solid #A7FFEB;
-  border-radius: 10px;
+
 
 }
 
 .row {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 2px solid #B0BEC5;
+    border-bottom: 2px solid #B0BEC5;
+    border-top: 1px solid #ECEFF1;
+    border-left: 1px solid #ECEFF1;
+    border-radius: 20px;
+    margin: 2px;
+    box-shadow: 1px 1px 1px 0 #B0BEC5;
 }
-
 
 .cell {
-  background-color:#A7FFEB;
-  height: 98%;
-  width: 95%;
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
+    background-color: #A7FFEB;
+    height: 98%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+.circle {
+  height: 40px;
+  width:40px;
+  border-radius: 100%;
+  background-color: red;
+}
+
+.circle1{
+  height: 20px;
+  width:20px;
+  border-radius: 100%;
+  background-color: #C6FF00;
+}
+
+.circle2{
+  height: 20px;
+  width:20px;
+  border-radius: 100%;
+  background-color: #84FFFF;
+}
+
+.wrapper-p1, .wrapper-p2 {
+  border: 2px solid #607D8B;
+  display: inline-block;
+  border-radius: 10px;
+  height: 50px;
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+
+  align-items: center;
+}
+
+.player {
+  display: flex;
+justify-content: center;
+  align-items:center;
+}
