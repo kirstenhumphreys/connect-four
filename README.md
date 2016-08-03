@@ -6,8 +6,6 @@ An updated take on the classic 'Vertical Checkers' game - Connect Four. To play 
 
 Play the game here: 
 
-[Connect Four](insert link)
-
 [My Trello Board](https://trello.com/b/e40drodF/project-one)
 
 

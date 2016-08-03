@@ -63,9 +63,10 @@ $('.newGame').click(function()
 
     //when a column is clicked, places players piece on the board
     $('.col').click(function() {
-        console.log(this.classList[1]);
-        console.log(this.classList[2]);
+        // console.log(this.classList[1]);
+        // console.log(this.classList[2]);
         console.log(currentPlayer);
+        console.log(gameBoard);
 
 
 

@@ -27,7 +27,7 @@ function buildGameBoard() {
           }
         }
           console.log(gameBoard);
-          console.log(gameBoard[0][4]);
+          console.log(gameBoard[0]);
 }
 
 //function to place game piece on the board with corresponding player's piece
@@ -41,6 +41,7 @@ $('.col').click(function() {
         console.log(this.classList[1]); //logs the div's second class (col-#)
         console.log(this.classList[2]); //logs the div's third class (row-#)
         console.log(currentPlayer); //logs which player just clicked the board
+        console.log(gameBoard[0]);
 
         placeGamePiece(currentPlayer, $(this));
 
