@@ -17,9 +17,19 @@ $(document).ready(function() {
                 gameBoard[r].push(0)
             }
         }
-        console.log(gameBoard)
-        console.log(gameBoard[0][4])
+
+      function gravityCheck(column) {
+      for (var i = gameBoard.length; i <= 0; i--) {
+        if (gameBoard[i][column] !== "1" && gameBoard[i][column] !== "2"){
+          gameBoard[i][column] = currentPlayer;
+          function placeGamePiece(player, myThis) {
+          var whichPlayer = 'circlep' + currentPlayer;
+          return currentPlayer;
+        }
+      }
     }
+    }
+  }
 
     //defines the current player and puts their move on the board, called below
     function placeGamePiece(player, myThis) {
@@ -28,15 +38,28 @@ $(document).ready(function() {
 
     }
 
+    function gravityCheck(column) {
+      for (var i = gameBoard.length; i <= 0; i--) {
+        if (gameBoard[i][column] !== "1" && gameBoard[i][column] !== "2"){
+          gameBoard[i][column] = currentPlayer;
+          function placeGamePiece(player) {
+          var whichPlayer = 'circlep' + currentPlayer;
+          return currentPlayer;
+        }
+      }
+    }
+
     //determine a win
     function determineVictory() {
     }
 
-    //run new game when button is clicked
-    function newGame() {
-        buildGameBoard();
-        // placeGamePiece();
-    }
+
+//reset empty gameboard
+$('.newGame').click(function()
+         reset: function(){
+         $('')
+
+         })
 
     //when a column is clicked, places players piece on the board
     $('.col').click(function() {
@@ -52,22 +75,18 @@ $(document).ready(function() {
 
 
         //call the function to place game pieces on board
-       placeGamePiece(currentPlayer, $(this));
+       placeGamePiece(currentPlayer);
 
 
         var column;
 
-        for (var r = 6; r > 0; r--) {
+        for (var r = 6; r <= 0; c--) {
 
-          var rowClass= "row-" + r
-          var classes= column + " " + rowClass
-          var emptyCell = document.getElementsByClassName('classes')
-
-          if (this.classList[3] === 'empty') {
+          if ($(this).classList[3] === "empty") {
             //update data html classes add class or remove
-            $('.col').removeClass("empty");
-
-            } break;
+            $(this).removeClass("empty");
+            break;
+            }
           }
 
         //if not a win then switch players
@@ -80,25 +99,25 @@ $(document).ready(function() {
       })//end of click
 
 
-         // function dropGamePiece(){
-         //  for (var r=6; r >=0; r--) {
-         //      if (columnPlacement === 0){
-         //         console.log(columnPlacement);
-         //         console.log(rowPlacement);
-         //      }
+         function dropGamePiece(){
+          for (var r=6; r >=0; r--) {
+              if (columnPlacement === 0){
+                 console.log(columnPlacement);
+                 console.log(rowPlacement);
+              }
 
-        // look into for each loop
-        //   if (
-        //   }
+        look into for each loop
+          if (
+          }
 
-        //  }
+         }
 
 
         // if in row, column 6 value == 0, place circle
 
 
         //Check for win logic
-/*
+
 columnMatch= for div row match could equal: [row[i],col[i]]
 
 
@@ -180,11 +199,11 @@ diagonalMatch=
                                 [1,3],[2,4],[3,5],[4,6]
                                 [0,3],[1,4],[2,5],[3,6]
 
-*/
 
 
-        //if not a win then switch players
 
-    });
+
+
+    }
 //})
 
