@@ -17,6 +17,14 @@ Play the game here:
 
 ###Wireframes & Mockups
 
+First Mockup:
+
+![alt text](https://raw.githubusercontent.com/kirstenhumphreys/connect-four/master/wireframes/New%20mockup.png "First Wireframe")
+
+Defining winning logic:
+
+![alt text](https://raw.githubusercontent.com/kirstenhumphreys/connect-four/master/wireframes/FullSizeRender.jpg "Winning Logic")
+
 
 
 ###Future Development:
