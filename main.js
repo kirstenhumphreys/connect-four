@@ -119,6 +119,9 @@ $('.newGame').click(function()
 
         //Check for win logic
 
+        //function to check for match
+
+
 columnMatch= for div row match could equal: [row[i],col[i]]
 
 

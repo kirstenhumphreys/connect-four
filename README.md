@@ -18,6 +18,7 @@ Play the game here: <br>
 * JavaScript
 * jQuery
 * Google Fonts
+* Favicon designed by Alfredo Hernandez from the [Noun Project](https://thenounproject.com/)
 
 
 ###Wireframes & Mockups
